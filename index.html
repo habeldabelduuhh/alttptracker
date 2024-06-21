@@ -1,126 +1,130 @@
 <html>
-   <head>
-      <title>ALTTP Randomizer Community Tracker - Launcher</title>
-      <script type="text/javascript" src="js/index.js?v=21005"></script>
-      <script type="text/javascript" src="js/jquery-3.3.1.js?v=21005"></script>
-      <script type="text/javascript" src="js/jquery.powertip.js?v=21005"></script>
-      <script type="text/javascript" src="js/bootstrap.min.js?v=21005"></script>
-      <link href="css/jquery.powertip.css?v=21005" rel="stylesheet" />
-      <link href="css/launcher.css?v=21005" rel="stylesheet">
-      <link href="css/fonts.css?v=21005" rel="stylesheet">
-      <link href="css/sprites.css?v=21005" rel="stylesheet">
-      <link href="css/toast.css?v=21005" rel="stylesheet">
-      <!-- Global site tag (gtag.js) - Google Analytics -->
-      <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3T0KM2W1L"></script>
-      <script>
-         $(function() {
-         	$('.south').powerTip({ placement: 's' });
-         });		
-         window.dataLayer = window.dataLayer || [];
-         function gtag(){dataLayer.push(arguments);}
-         gtag('js', new Date());
-         
-         gtag('config', 'G-Z3T0KM2W1L');
-      </script>
-      <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-      <meta http-equiv="Pragma" content="no-cache" />
-      <meta http-equiv="Expires" content="0" />
-      <link rel="apple-touch-icon" sizes="180x180" href="images/icons/apple-touch-icon.png">
-      <link rel="icon" type="image/png" sizes="32x32" href="images/icons/favicon-32x32.png">
-      <link rel="icon" type="image/png" sizes="16x16" href="images/icons/favicon-16x16.png">
-   </head>
-   <body onload="load_cookie(); hideRestreaming();">
-      <div class="outer-wrapper">
-         <div>
-            <div class="header-main-div">
-               <a href="./index.html"><img src="./images/overlay/header.png" class="header-main-img"></a>
-               <div class="header-news-div" >
-                  <span class="default-white-text">Build 2.1.005 060624 - Compatible for v31.x.x<br>Report any issues to Dunka (Discord: @bigdunka)<br>Check Known Issues for current known outstanding issues</span>
-               </div>
+<head>
+    <title>ALTTP Randomizer Community Tracker - Launcher</title>
+    <script src="js/index.js?v=21005" type="text/javascript"></script>
+    <script src="js/jquery-3.3.1.js?v=21005" type="text/javascript"></script>
+    <script src="js/jquery.powertip.js?v=21005" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js?v=21005" type="text/javascript"></script>
+    <link href="css/jquery.powertip.css?v=21005" rel="stylesheet"/>
+    <link href="css/launcher.css?v=21005" rel="stylesheet">
+    <link href="css/fonts.css?v=21005" rel="stylesheet">
+    <link href="css/sprites.css?v=21005" rel="stylesheet">
+    <link href="css/toast.css?v=21005" rel="stylesheet">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z3T0KM2W1L"></script>
+    <script>
+        $(function () {
+            $('.south').powerTip({placement: 's'});
+        });
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-Z3T0KM2W1L');
+    </script>
+    <meta content="no-cache, no-store, must-revalidate" http-equiv="Cache-Control"/>
+    <meta content="no-cache" http-equiv="Pragma"/>
+    <meta content="0" http-equiv="Expires"/>
+    <link href="images/icons/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180">
+    <link href="images/icons/favicon-32x32.png" rel="icon" sizes="32x32" type="image/png">
+    <link href="images/icons/favicon-16x16.png" rel="icon" sizes="16x16" type="image/png">
+</head>
+<body onload="load_cookie(); hideRestreaming();">
+<div class="outer-wrapper">
+    <div>
+        <div class="header-main-div">
+            <a href="./index.html"><img class="header-main-img" src="./images/overlay/header.png"></a>
+            <div class="header-news-div">
+                <span class="default-white-text">Build 2.1.005 060624 - Compatible for v31.x.x<br>Report any issues to Dunka (Discord: @bigdunka)<br>Check Known Issues for current known outstanding issues</span>
             </div>
-            <div class="header-links">
-               <a href="./release.html">
-                  <div class="header-link-img"><span class="header-text-span">Release Notes</span></div>
-               </a>
-               <a href="./instructions.html">
-                  <div class="header-link-img"><span class="header-text-span">Instructions</span></div>
-               </a>
-               <a href="./issues.html">
-                  <div class="header-link-img"><span class="header-text-span">Known Issues</span></div>
-               </a>
-               <a href="./contributors.html">
-                  <div class="header-link-img" ><span class="header-text-span">Contributors</span></div>
-               </a>
-               <a href="./downloads.html">
-                  <div class="header-link-img"><span class="header-text-span">Downloads</span></div>
-               </a>
+        </div>
+        <div class="header-links">
+            <a href="./release.html">
+                <div class="header-link-img"><span class="header-text-span">Release Notes</span></div>
+            </a>
+            <a href="./instructions.html">
+                <div class="header-link-img"><span class="header-text-span">Instructions</span></div>
+            </a>
+            <a href="./issues.html">
+                <div class="header-link-img"><span class="header-text-span">Known Issues</span></div>
+            </a>
+            <a href="./contributors.html">
+                <div class="header-link-img"><span class="header-text-span">Contributors</span></div>
+            </a>
+            <a href="./downloads.html">
+                <div class="header-link-img"><span class="header-text-span">Downloads</span></div>
+            </a>
+        </div>
+    </div>
+    <div class="main-wrapper">
+        <div class="preset-div">
+            <div class="preset-header" style="cursor: default;">
+                Ladder Presets
             </div>
-         </div>
-         <div class="main-wrapper">
-            <div class="preset-div">
-               <div class="preset-header" style="cursor: default;">
-                  Ladder Presets
-               </div>
-               <div>
+            <div>
                   <span class="preset-btn-span">
-                  <input type="button" value="OPEN" class="preset-btn" onclick="loadopenpreset()" />
+                  <input class="preset-btn" onclick="loadopenpreset()" type="button" value="OPEN"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="CASUAL BOOTS" class="preset-btn" onclick="loadbootspreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadbootspreset()" type="button" value="CASUAL BOOTS"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="CROSSKEYS" class="preset-btn" onclick="loadcrosskeyspreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadcrosskeyspreset()" type="button" value="CROSSKEYS"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="MYSTERY" class="preset-btn" onclick="loadmysterypreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadmysterypreset()" type="button" value="MYSTERY"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="DOUBLE DOWN" class="preset-btn" onclick="loaddoubledownpreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loaddoubledownpreset()" type="button" value="DOUBLE DOWN"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="RETRANCE" class="preset-btn" onclick="loadretrancepreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadretrancepreset()" type="button" value="RETRANCE"/>
                   </span>
-               </div>
-               <div class="preset-header" style="cursor: default;">
-                  War for Hyrule Presets
-               </div>
-               <div>
+            </div>
+            <div class="preset-header" style="cursor: default;">
+                War for Hyrule Presets
+            </div>
+            <div>
                   <span class="preset-btn-span">
-                  <input type="button" value="AD KEYSANITY" class="preset-btn" onclick="loadadkeyspreset()" />
+                  <input class="preset-btn" onclick="loadadkeyspreset()" type="button" value="AD KEYSANITY"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="BOSSHUNT" class="preset-btn" onclick="loadbosshuntpreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadbosshuntpreset()" type="button" value="BOSSHUNT"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="CASUAL BOOTS" class="preset-btn" onclick="loadbootspreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadbootspreset()" type="button" value="CASUAL BOOTS"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="CROSSKEYS" class="preset-btn" onclick="loadcrosskeyspreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadcrosskeyspreset()" type="button" value="CROSSKEYS"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="CHAOS BOSS" class="preset-btn" onclick="loadenemizerpreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadenemizerpreset()" type="button" value="CHAOS BOSS"/>
                   </span>
-               </div>			   
-               <div>
+            </div>
+            <div>
                   <span class="preset-btn-span">
-                  <input type="button" value="INFLUKEYS" class="preset-btn" onclick="loadinflukeyspreset()" />
+                  <input class="preset-btn" onclick="loadinflukeyspreset()" type="button" value="INFLUKEYS"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="OPEN" class="preset-btn" onclick="loadopenpreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadopenpreset()" type="button" value="OPEN"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="7/6 OPEN" class="preset-btn" onclick="load76openpreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="load76openpreset()" type="button" value="7/6 OPEN"/>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="RETRANCE" class="preset-btn" onclick="loadretrancepreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadretrancepreset()" type="button" value="RETRANCE"/>
                   </span>
-               </div>			   
-               <div class="preset-header" style="cursor: default;">
-                  Archived Presets
-               </div>
-               <div>
+            </div>
+            <div class="preset-header" style="cursor: default;">
+                Archived Presets
+            </div>
+            <div>
                   <span class="preset-btn-span">
-                  <select id="archivepresetselect" class="sprite-dropdown" onchange="loadarchivepreset()">
+                  <select class="sprite-dropdown" id="archivepresetselect" onchange="loadarchivepreset()">
 					<option value="ADKeysanity">AD Keysanity</option>
 					<option value="Ambrosia">Ambrosia</option>
 					<option value="Ambroz1a">AmbroZ1a</option>
@@ -157,292 +161,297 @@
 					<option value="StandardBoots">Standard Boots</option>
                   </select>
                   </span>
-                  <span class="preset-btn-span">
-                  <input type="button" value="LOAD PRESET" class="preset-btn" onclick="loadarchivepreset()" />
+                <span class="preset-btn-span">
+                  <input class="preset-btn" onclick="loadarchivepreset()" type="button" value="LOAD PRESET"/>
                   </span>
-               </div>
-               <div id="importflagsdiv">
-                  <div id="importflagsdiv" class="preset-header" style="cursor: default;">
-                     Import Flags
-                  </div>
-                  <div>
-                     <span class="preset-btn-span">
-                     Enter Seed URL: <span class="south tooltop-character" title="This will import the flags from the ALTTPR generator and import automatically. Does NOT work properly with some customizer settings, or when using in offline mode.">[?]</span>
-                     </span>
-                     <span class="preset-btn-span">
-                     <input type="text" id="importflag"/>
-                     </span>
-                     <span class="preset-btn-span">
-                     <input type="button" value="IMPORT FLAGS" class="preset-btn" onclick="importflags()" />
-                     </span>
-                  </div>
-               </div>
             </div>
-            <div class="preset-div">
-               <div class="preset-header" onclick="togglediv('gameplay');">
-                  <span id="gameplayarrow">&#9660;</span> Gameplay Settings
-               </div>
-               <div id="gameplaydiv" style="display: none;">
-                  <div>
+            <div id="importflagsdiv">
+                <div class="preset-header" id="importflagsdiv" style="cursor: default;">
+                    Import Flags
+                </div>
+                <div>
+                     <span class="preset-btn-span">
+                     Enter Seed URL: <span class="south tooltop-character"
+                                           title="This will import the flags from the ALTTPR generator and import automatically. Does NOT work properly with some customizer settings, or when using in offline mode.">[?]</span>
+                     </span>
+                    <span class="preset-btn-span">
+                     <input id="importflag" type="text"/>
+                     </span>
+                    <span class="preset-btn-span">
+                     <input class="preset-btn" onclick="importflags()" type="button" value="IMPORT FLAGS"/>
+                     </span>
+                </div>
+            </div>
+        </div>
+        <div class="preset-div">
+            <div class="preset-header" onclick="togglediv('gameplay');">
+                <span id="gameplayarrow">&#9660;</span> Gameplay Settings
+            </div>
+            <div id="gameplaydiv" style="display: none;">
+                <div>
                      <span class="preset-span-double">
                      World State:
                      </span>
-                     <span class="preset-span">
-                     <input id="gametypeopen" value="O" type="radio" name="gametypegroup" checked />
-                     <label for="gametypeopen" >Open</label>
+                    <span class="preset-span">
+                     <input checked id="gametypeopen" name="gametypegroup" type="radio" value="O"/>
+                     <label for="gametypeopen">Open</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="gametypestandard" value="S" type="radio" name="gametypegroup" />
-                     <label for="gametypestandard" >Standard</label>
+                    <span class="preset-span">
+                     <input id="gametypestandard" name="gametypegroup" type="radio" value="S"/>
+                     <label for="gametypestandard">Standard</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="gametypeinverted" value="I" type="radio" name="gametypegroup" />
-                     <label for="gametypeinverted" >Inverted</label>
+                    <span class="preset-span">
+                     <input id="gametypeinverted" name="gametypegroup" type="radio" value="I"/>
+                     <label for="gametypeinverted">Inverted</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="gametyperetro" value="R" type="radio" name="gametypegroup" />
-                     <label for="gametyperetro" >Retro</label>
+                    <span class="preset-span">
+                     <input id="gametyperetro" name="gametypegroup" type="radio" value="R"/>
+                     <label for="gametyperetro">Retro</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Entrance Shuffle:
                      </span>
-                     <span class="preset-span">
-                     <input id="entrancenone" value="N" type="radio" name="entrancegroup" checked />
-                     <label for="entrancenone" >No</label>
+                    <span class="preset-span">
+                     <input checked id="entrancenone" name="entrancegroup" type="radio" value="N"/>
+                     <label for="entrancenone">No</label>
                      </span>
-                     <span class="preset-span-double">
-                     <input id="entrancesimple" value="S" type="radio" name="entrancegroup" />
-                     <label for="entrancesimple" >Simple/Restricted/Full/Crossed</label>
+                    <span class="preset-span-double">
+                     <input id="entrancesimple" name="entrancegroup" type="radio" value="S"/>
+                     <label for="entrancesimple">Simple/Restricted/Full/Crossed</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Door Shuffle:
                      </span>
-                     <span class="preset-span">
-                     <input id="doornone" value="N" type="radio" name="doorgroup" checked />
-                     <label for="doornone" >No</label>
+                    <span class="preset-span">
+                     <input checked id="doornone" name="doorgroup" type="radio" value="N"/>
+                     <label for="doornone">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="doorbasic" value="B" type="radio" name="doorgroup" />
-                     <label for="doorbasic" >Basic</label>
+                    <span class="preset-span">
+                     <input id="doorbasic" name="doorgroup" type="radio" value="B"/>
+                     <label for="doorbasic">Basic</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="doorcrossed" value="C" type="radio" name="doorgroup" />
-                     <label for="doorcrossed" >Crossed</label>
+                    <span class="preset-span">
+                     <input id="doorcrossed" name="doorgroup" type="radio" value="C"/>
+                     <label for="doorcrossed">Crossed</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Overworld Shuffle: <span class="south tooltop-character" title="BETA! Expect improvements in the future. Glitches not implemented.">[?]</span>
+                     Overworld Shuffle: <span class="south tooltop-character"
+                                              title="BETA! Expect improvements in the future. Glitches not implemented.">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="overworldno" value="N" type="radio" name="overworldgroup" checked />
-                     <label for="overworldno" >No</label>
+                    <span class="preset-span">
+                     <input checked id="overworldno" name="overworldgroup" type="radio" value="N"/>
+                     <label for="overworldno">No</label>
                      </span>
-                     <span class="preset-span-double">
-                     <input id="overworldyes" value="Y" type="radio" name="overworldgroup" />
-                     <label for="overworldyes" >Yes (Layout/Crossed/Mixed/Flute) <span class="south tooltop-character" title="Detailed settings to be specified in the Overworld Tracker window. All combinations of Parallel/Full Layout Shuffle, Crossed, Mixed and Flute Shuffle are supported." >[?]</span></label>
+                    <span class="preset-span-double">
+                     <input id="overworldyes" name="overworldgroup" type="radio" value="Y"/>
+                     <label for="overworldyes">Yes (Layout/Crossed/Mixed/Flute) <span class="south tooltop-character"
+                                                                                      title="Detailed settings to be specified in the Overworld Tracker window. All combinations of Parallel/Full Layout Shuffle, Crossed, Mixed and Flute Shuffle are supported.">[?]</span></label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Boss Shuffle:
                      </span>
-                     <span class="preset-span">
-                     <input id="bossnone" value="N" type="radio" name="bossgroup" checked />
-                     <label for="bossnone" >No</label>
+                    <span class="preset-span">
+                     <input checked id="bossnone" name="bossgroup" type="radio" value="N"/>
+                     <label for="bossnone">No</label>
                      </span>
-                     <span class="preset-span-double">
-                     <input id="bossshuffled" value="S" type="radio" name="bossgroup" />
-                     <label for="bossshuffled" >Simple/Full/Random</label>
+                    <span class="preset-span-double">
+                     <input id="bossshuffled" name="bossgroup" type="radio" value="S"/>
+                     <label for="bossshuffled">Simple/Full/Random</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Enemy Shuffle:
                      </span>
-                     <span class="preset-span">
-                     <input id="enemynone" value="N" type="radio" name="enemygroup" checked />
-                     <label for="enemynone" >No</label>
+                    <span class="preset-span">
+                     <input checked id="enemynone" name="enemygroup" type="radio" value="N"/>
+                     <label for="enemynone">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="enemyshuffled" value="S" type="radio" name="enemygroup" />
-                     <label for="enemyshuffled" >Shuffled</label>
+                    <span class="preset-span">
+                     <input id="enemyshuffled" name="enemygroup" type="radio" value="S"/>
+                     <label for="enemyshuffled">Shuffled</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Unknown Settings:
                      </span>
-                     <span class="preset-span">
-                     <input id="unknownnone" value="N" type="radio" name="unknowngroup" checked />
-                     <label for="unknownnone" >No</label>
+                    <span class="preset-span">
+                     <input checked id="unknownnone" name="unknowngroup" type="radio" value="N"/>
+                     <label for="unknownnone">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="unknownmystery" value="M" type="radio" name="unknowngroup" />
-                     <label for="unknownmystery" >Mystery</label>
+                    <span class="preset-span">
+                     <input id="unknownmystery" name="unknowngroup" type="radio" value="M"/>
+                     <label for="unknownmystery">Mystery</label>
                      </span>
-                  </div>
-               </div>
+                </div>
             </div>
-            <div class="preset-div">
-               <div class="preset-header" onclick="togglediv('logic');">
-                  <span id="logicarrow">&#9660;</span> Logic Settings
-               </div>
-               <div id="logicdiv" style="display: none;">
-                  <div>
+        </div>
+        <div class="preset-div">
+            <div class="preset-header" onclick="togglediv('logic');">
+                <span id="logicarrow">&#9660;</span> Logic Settings
+            </div>
+            <div id="logicdiv" style="display: none;">
+                <div>
                      <span class="preset-span-double">
                      Swords:
                      </span>
-                     <span class="preset-span">
-                     <input checked id="swordsrandomized" value="R" type="radio" name="swordsgroup" />
+                    <span class="preset-span">
+                     <input checked id="swordsrandomized" name="swordsgroup" type="radio" value="R"/>
                      <label for="swordsrandomized">Randomized</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="swordsassured" value="A" type="radio" name="swordsgroup" />
+                    <span class="preset-span">
+                     <input id="swordsassured" name="swordsgroup" type="radio" value="A"/>
                      <label for="swordsassured">Assured</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="swordsvanilla" value="V" type="radio" name="swordsgroup" />
+                    <span class="preset-span">
+                     <input id="swordsvanilla" name="swordsgroup" type="radio" value="V"/>
                      <label for="swordsvanilla">Vanilla</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="swordsswordless" value="S" type="radio" name="swordsgroup" />
+                    <span class="preset-span">
+                     <input id="swordsswordless" name="swordsgroup" type="radio" value="S"/>
                      <label for="swordsswordless">Swordless</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Shuffled Dungeon Items:
                      </span>
-                     <span class="preset-span">
-                     <input id="shuffledmaps" type="checkbox" />
+                    <span class="preset-span">
+                     <input id="shuffledmaps" type="checkbox"/>
                      <label for="shuffledmaps">Maps</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="shuffledcompasses" type="checkbox" />
+                    <span class="preset-span">
+                     <input id="shuffledcompasses" type="checkbox"/>
                      <label for="shuffledcompasses">Compasses</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="shuffledsmallkeys" type="checkbox" />
+                    <span class="preset-span">
+                     <input id="shuffledsmallkeys" type="checkbox"/>
                      <label for="shuffledsmallkeys">Small Keys</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="shuffledbigkeys" type="checkbox" />
-                     <label for="shuffledbigkeys" >Big Keys</label>
+                    <span class="preset-span">
+                     <input id="shuffledbigkeys" type="checkbox"/>
+                     <label for="shuffledbigkeys">Big Keys</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Ambrosia: <span class="south tooltop-character" title="This ensures there are no dungeon items (keys, maps, compasses) on bosses">[?]</span>
+                     Ambrosia: <span class="south tooltop-character"
+                                     title="This ensures there are no dungeon items (keys, maps, compasses) on bosses">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="ambrosiano" value="N" type="radio" name="ambrosiagroup" checked />
+                    <span class="preset-span">
+                     <input checked id="ambrosiano" name="ambrosiagroup" type="radio" value="N"/>
                      <label for="ambrosiano">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="ambrosiayes" value="Y" type="radio" name="ambrosiagroup" />
+                    <span class="preset-span">
+                     <input id="ambrosiayes" name="ambrosiagroup" type="radio" value="Y"/>
                      <label for="ambrosiayes">Yes</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Non-Progressive Bows:</span>
-                     </span>
-                     <span class="preset-span">
-                     <input id="nonprogressivebowsno" value="N" type="radio" name="nonprogressivebowsgroup" checked />
+                    </span>
+                    <span class="preset-span">
+                     <input checked id="nonprogressivebowsno" name="nonprogressivebowsgroup" type="radio" value="N"/>
                      <label for="nonprogressivebowsno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="nonprogressivebowsyes" value="Y" type="radio" name="nonprogressivebowsgroup" />
+                    <span class="preset-span">
+                     <input id="nonprogressivebowsyes" name="nonprogressivebowsgroup" type="radio" value="Y"/>
                      <label for="nonprogressivebowsyes">Yes</label>							
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Activated Flute:
                      </span>
-                     <span class="preset-span">
-                     <input id="activatedfluteno" value="N" type="radio" name="activatedflutegroup" checked />
+                    <span class="preset-span">
+                     <input checked id="activatedfluteno" name="activatedflutegroup" type="radio" value="N"/>
                      <label for="activatedfluteno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="activatedfluteyes" value="Y" type="radio" name="activatedflutegroup" />
+                    <span class="preset-span">
+                     <input id="activatedfluteyes" name="activatedflutegroup" type="radio" value="Y"/>
                      <label for="activatedfluteyes">Yes</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Shopsanity:
                      </span>
-                     <span class="preset-span">
-                     <input id="shopsanityno" value="N" type="radio" name="shopsanitygroup" checked />
+                    <span class="preset-span">
+                     <input checked id="shopsanityno" name="shopsanitygroup" type="radio" value="N"/>
                      <label for="shopsanityno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="shopsanityyes" value="Y" type="radio" name="shopsanitygroup" />
+                    <span class="preset-span">
+                     <input id="shopsanityyes" name="shopsanitygroup" type="radio" value="Y"/>
                      <label for="shopsanityyes">Yes</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Glitches: <span class="south tooltop-character" title="OWG glitches are currently implemented, need to be validated. Inverted/OWG is not currently implemented. Major/No Logic will show all locations available.">[?]</span>
+                     Glitches: <span class="south tooltop-character"
+                                     title="OWG glitches are currently implemented, need to be validated. Inverted/OWG is not currently implemented. Major/No Logic will show all locations available.">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="glitchesnone" value="N" type="radio" name="glitchesgroup" checked />
+                    <span class="preset-span">
+                     <input checked id="glitchesnone" name="glitchesgroup" type="radio" value="N"/>
                      <label for="glitchesnone">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="glitchesoverworld" value="O" type="radio" name="glitchesgroup" />
+                    <span class="preset-span">
+                     <input id="glitchesoverworld" name="glitchesgroup" type="radio" value="O"/>
                      <label for="glitchesoverworld">Overworld</label>
                      </span>
-                     <span class="preset-span-double">
-                     <input id="glitchesmajor" value="M" type="radio" name="glitchesgroup" />
+                    <span class="preset-span-double">
+                     <input id="glitchesmajor" name="glitchesgroup" type="radio" value="M"/>
                      <label for="glitchesmajor">Major/No Logic</label>
                      </span>
-                  </div>
-               </div>
+                </div>
             </div>
-            <div class="preset-div">
-               <div class="preset-header" onclick="togglediv('goal');">
-                  <span id="goalarrow">&#9660;</span> Goal Settings
-               </div>
-               <div id="goaldiv" style="display: none;">
-                  <div>
+        </div>
+        <div class="preset-div">
+            <div class="preset-header" onclick="togglediv('goal');">
+                <span id="goalarrow">&#9660;</span> Goal Settings
+            </div>
+            <div id="goaldiv" style="display: none;">
+                <div>
                      <span class="preset-span-double">
                      Goal:
                      </span>
-                     <span class="preset-span">
-                     <input id="goalganon" value="G" type="radio" name="goalgroup" checked />
+                    <span class="preset-span">
+                     <input checked id="goalganon" name="goalgroup" type="radio" value="G"/>
                      <label for="goalganon">Ganon</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="goalfast" value="F" type="radio" name="goalgroup" />
+                    <span class="preset-span">
+                     <input id="goalfast" name="goalgroup" type="radio" value="F"/>
                      <label for="goalfast">Fast Ganon</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="goaldungeons" value="A" type="radio" name="goalgroup" />
+                    <span class="preset-span">
+                     <input id="goaldungeons" name="goalgroup" type="radio" value="A"/>
                      <label for="goaldungeons">All Dungeons</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="goalpedestal" value="P" type="radio" name="goalgroup" />
+                    <span class="preset-span">
+                     <input id="goalpedestal" name="goalgroup" type="radio" value="P"/>
                      <label for="goalpedestal">Pedestal</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="goalother" value="O" type="radio" name="goalgroup" />
+                    <span class="preset-span">
+                     <input id="goalother" name="goalgroup" type="radio" value="O"/>
                      <label for="goalother">Other</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Open Tower:
                      </span>
-                     <span class="preset-span">
-                        <input id="goalcrystal" value="C" type="radio" name="towergroup" checked />
-                        <label for="goalcrystal" class="select-label">Crystals</label>
+                    <span class="preset-span">
+                        <input checked id="goalcrystal" name="towergroup" type="radio" value="C"/>
+                        <label class="select-label" for="goalcrystal">Crystals</label>
                         <select id="towerselect" style="max-width: 40px;">
                            <option value="0">0</option>
                            <option value="1">1</option>
@@ -451,21 +460,21 @@
                            <option value="4">4</option>
                            <option value="5">5</option>
                            <option value="6">6</option>
-                           <option value="7" selected>7</option>
+                           <option selected value="7">7</option>
                         </select>
                      </span>
-                     <span class="preset-span">
-                     <input id="goalrandom" value="R" type="radio" name="towergroup" />
+                    <span class="preset-span">
+                     <input id="goalrandom" name="towergroup" type="radio" value="R"/>
                      <label for="goalrandom">Random</label>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Ganon Vulnerable:
                      </span>
-                     <span class="preset-span">
-                        <input id="ganoncrystal" value="C" type="radio" name="ganongroup" checked />
-                        <label for="ganoncrystal" class="select-label">Crystals</label>
+                    <span class="preset-span">
+                        <input checked id="ganoncrystal" name="ganongroup" type="radio" value="C"/>
+                        <label class="select-label" for="ganoncrystal">Crystals</label>
                         <select id="ganonselect" style="max-width: 40px;">
                            <option value="0">0</option>
                            <option value="1">1</option>
@@ -474,93 +483,93 @@
                            <option value="4">4</option>
                            <option value="5">5</option>
                            <option value="6">6</option>
-                           <option value="7" selected>7</option>
+                           <option selected value="7">7</option>
                         </select>
                      </span>
-                     <span class="preset-span">
-                     <input id="ganonrandom" value="R" type="radio" name="ganongroup" />
+                    <span class="preset-span">
+                     <input id="ganonrandom" name="ganongroup" type="radio" value="R"/>
                      <label for="ganonrandom">Random</label>
                      </span>
-                  </div>
-               </div>
+                </div>
             </div>
-            <div class="preset-div">
-               <div class="preset-header" onclick="togglediv('starting');">
-                  <span id="startingarrow">&#9660;</span> Starting Items
-               </div>
-               <div id="startingdiv" style="display: none;">
-                  <div class="starting-inner-div">
-                     <div id="startingmoonpearl" class="item moonpearl" onClick="toggle('moonpearl',0)"></div>
-                     <div id="startingbow" class="item bow0" onclick="toggle('bow',1)"></div>
-                     <div id="startingboomerang" class="item boomerang0" onClick="toggle('boomerang',2)"></div>
-                     <div id="startinghookshot" class="item hookshot" onClick="toggle('hookshot',3)"></div>
-                     <div id="startingmushroom" class="item mushroom" onClick="toggle('mushroom',4)" ></div>
-                     <div id="startingpowder" class="item powder" onClick="toggle('powder',5)"></div>
-                     <div id="startingfirerod" class="item firerod" onClick="toggle('firerod',6)"></div>
-                     <div id="startingicerod" class="item icerod" onClick="toggle('icerod',7)"></div>
-                     <div id="startingbombos" class="item bombos" onClick="toggle('bombos',8)"></div>
-                     <div id="startingether" class="item ether" onClick="toggle('ether',9)"></div>
-                     <div id="startingquake" class="item quake" onClick="toggle('quake',10)"></div>
-                     <div id="startinglantern" class="item lantern" onClick="toggle('lantern',11)"></div>
-                     <div id="startinghammer" class="item hammer" onClick="toggle('hammer',12)"></div>
-                     <div id="startingshovel" class="item shovel" onClick="toggle('shovel',13)"></div>
-                     <div id="startingflute" class="item flute" onClick="toggle('flute',14)"></div>
-                     <div id="startingnet" class="item net" onClick="toggle('net',15)"></div>
-                     <div id="startingbook" class="item book" onClick="toggle('book',16)"></div>
-                     <div id="startingbottle" class="item bottle" onClick="toggle('bottle',17)"></div>
-                     <div id="startingsomaria" class="item somaria" onClick="toggle('somaria',18)"></div>
-                     <div id="startingbyrna" class="item byrna" onClick="toggle('byrna',19)"></div>
-                     <div id="startingcape" class="item cape" onClick="toggle('cape',20)"></div>
-                     <div id="startingmirror" class="item mirror" onClick="toggle('mirror',21)"></div>
-                     <div id="startingboots" class="item boots" onClick="toggle('boots',22)"></div>
-                     <div id="startingglove" class="item glove0" onClick="toggle('glove',23)"></div>
-                     <div id="startingflippers" class="item flippers" onClick="toggle('flippers',24)"></div>
-                     <div id="startingmagic" class="item magic" onClick="toggle('magic',25)"></div>
-                  </div>
-               </div>
+        </div>
+        <div class="preset-div">
+            <div class="preset-header" onclick="togglediv('starting');">
+                <span id="startingarrow">&#9660;</span> Starting Items
             </div>
-            <div id="restreamingpresetdiv" class="preset-div">
-               <div class="preset-header" onclick="togglediv('restream');">
-                  <span id="restreamarrow">&#9660;</span> Restreaming
-               </div>
-               <div id="restreamdiv" style="display: none;">
-                  <div>
+            <div id="startingdiv" style="display: none;">
+                <div class="starting-inner-div">
+                    <div class="item moonpearl" id="startingmoonpearl" onClick="toggle('moonpearl',0)"></div>
+                    <div class="item bow0" id="startingbow" onclick="toggle('bow',1)"></div>
+                    <div class="item boomerang0" id="startingboomerang" onClick="toggle('boomerang',2)"></div>
+                    <div class="item hookshot" id="startinghookshot" onClick="toggle('hookshot',3)"></div>
+                    <div class="item mushroom" id="startingmushroom" onClick="toggle('mushroom',4)"></div>
+                    <div class="item powder" id="startingpowder" onClick="toggle('powder',5)"></div>
+                    <div class="item firerod" id="startingfirerod" onClick="toggle('firerod',6)"></div>
+                    <div class="item icerod" id="startingicerod" onClick="toggle('icerod',7)"></div>
+                    <div class="item bombos" id="startingbombos" onClick="toggle('bombos',8)"></div>
+                    <div class="item ether" id="startingether" onClick="toggle('ether',9)"></div>
+                    <div class="item quake" id="startingquake" onClick="toggle('quake',10)"></div>
+                    <div class="item lantern" id="startinglantern" onClick="toggle('lantern',11)"></div>
+                    <div class="item hammer" id="startinghammer" onClick="toggle('hammer',12)"></div>
+                    <div class="item shovel" id="startingshovel" onClick="toggle('shovel',13)"></div>
+                    <div class="item flute" id="startingflute" onClick="toggle('flute',14)"></div>
+                    <div class="item net" id="startingnet" onClick="toggle('net',15)"></div>
+                    <div class="item book" id="startingbook" onClick="toggle('book',16)"></div>
+                    <div class="item bottle" id="startingbottle" onClick="toggle('bottle',17)"></div>
+                    <div class="item somaria" id="startingsomaria" onClick="toggle('somaria',18)"></div>
+                    <div class="item byrna" id="startingbyrna" onClick="toggle('byrna',19)"></div>
+                    <div class="item cape" id="startingcape" onClick="toggle('cape',20)"></div>
+                    <div class="item mirror" id="startingmirror" onClick="toggle('mirror',21)"></div>
+                    <div class="item boots" id="startingboots" onClick="toggle('boots',22)"></div>
+                    <div class="item glove0" id="startingglove" onClick="toggle('glove',23)"></div>
+                    <div class="item flippers" id="startingflippers" onClick="toggle('flippers',24)"></div>
+                    <div class="item magic" id="startingmagic" onClick="toggle('magic',25)"></div>
+                </div>
+            </div>
+        </div>
+        <div class="preset-div" id="restreamingpresetdiv">
+            <div class="preset-header" onclick="togglediv('restream');">
+                <span id="restreamarrow">&#9660;</span> Restreaming
+            </div>
+            <div id="restreamdiv" style="display: none;">
+                <div>
                      <span class="preset-span-double">
-                     Enter Code: <input style="width: 100px" id="restreamingcode" type="text" />
+                     Enter Code: <input id="restreamingcode" style="width: 100px" type="text"/>
                      </span>
-                     <span class="preset-btn-span">
-                     <input type="button" value="VALIDATE" class="preset-btn" onclick="validateRestreamCode()" />
+                    <span class="preset-btn-span">
+                     <input class="preset-btn" onclick="validateRestreamCode()" type="button" value="VALIDATE"/>
                      </span>
-                     <span class="preset-span" style="display: none;">
-                     <input id="restreamingno" value="N" type="radio" name="restreamgroup" checked />
+                    <span class="preset-span" style="display: none;">
+                     <input checked id="restreamingno" name="restreamgroup" type="radio" value="N"/>
                      <label for="restreamingno">No</label>
                      </span>
-                     <span class="preset-span" id="restreamingtrackerspan" style="display: none;">
-                     <input id="restreamingtracker" value="T" type="radio" name="restreamgroup" disabled />
+                    <span class="preset-span" id="restreamingtrackerspan" style="display: none;">
+                     <input disabled id="restreamingtracker" name="restreamgroup" type="radio" value="T"/>
                      <label for="restreamingtracker">Racer/Tracker</label>
                      </span>
-                     <span class="preset-span" id="restreamingrestreamerspan" style="display: none;">
-                     <input id="restreamingrestreamer" value="R" type="radio" name="restreamgroup" disabled />
+                    <span class="preset-span" id="restreamingrestreamerspan" style="display: none;">
+                     <input disabled id="restreamingrestreamer" name="restreamgroup" type="radio" value="R"/>
                      <label for="restreamingrestreamer">Restreamer</label>
                      </span>
-                     <span class="preset-span" id="restreamingusedelayspan" style="display: none;">
-                     <input id="restreamingdelay" type="text" value="0" style="width: 40px" disabled />
+                    <span class="preset-span" id="restreamingusedelayspan" style="display: none;">
+                     <input disabled id="restreamingdelay" style="width: 40px" type="text" value="0"/>
                      <label for="restreamingdelay">Delay</label>
                      </span>
-                  </div>
-               </div>
+                </div>
             </div>
-            <div class="preset-div">
-               <div class="preset-header-double">
-                  Display Settings
-               </div>
-               <div id="displaydiv" style="cursor: default;">
-                  <div>
+        </div>
+        <div class="preset-div">
+            <div class="preset-header-double">
+                Display Settings
+            </div>
+            <div id="displaydiv" style="cursor: default;">
+                <div>
                      <span class="preset-span-double">
                      Sprite: 
                      </span>
-                     <span class="preset-span">
-                        <select id="spriteselect" class="sprite-dropdown">
+                    <span class="preset-span">
+                        <select class="sprite-dropdown" id="spriteselect">
 							<option value="abigail">Abigail</option>
 							<option value="adol">Adol</option>
 							<option value="adventure_2600">Adventure 2600</option>
@@ -815,7 +824,7 @@
 							<option value="lestat">Lestat</option>
 							<option value="lily">Lily</option>
 							<option value="linja">Linja</option>
-							<option value="link" selected>Link</option>
+							<option selected value="link">Link</option>
 							<option value="link_zelda_1">Link (Zelda 1)</option>
 							<option value="link_redrawn">Link Redrawn</option>
 							<option value="little_hylian">Little Hylian</option>
@@ -1083,100 +1092,117 @@
 							<option value="zora">Zora</option>
                         </select>
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
                      Map:
                      </span>
-                     <span class="preset-span">
-                     <input checked id="mapno" value="N" type="radio" name="mapgroup" />
+                    <span class="preset-span">
+                     <input checked id="mapno" name="mapgroup" type="radio" value="N"/>
                      <label for="mapno">None</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="mapyes" value="M" type="radio" name="mapgroup" />
+                    <span class="preset-span">
+                     <input id="mapyes" name="mapgroup" type="radio" value="M"/>
                      <label for="mapyes">Normal</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="mapsmall" value="C" type="radio" name="mapgroup" />
+                    <span class="preset-span">
+                     <input id="mapsmall" name="mapgroup" type="radio" value="C"/>
                      <label for="mapsmall">Compact</label>	
                      </span>
-                     <span class="preset-span">
-                     <input id="mapvertical" value="V" type="radio" name="mapgroup" />
+                    <span class="preset-span">
+                     <input id="mapvertical" name="mapgroup" type="radio" value="V"/>
                      <label for="mapvertical">Vertical</label>	
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Spoiler Log: <span class="south tooltop-character" title="This will allow you to post a spoiler log after loading to populate items into the map<br>This feature is generally NOT allowed for tournaments! You must use spoiler logs generated from the ALTTPR Site, spoiler logs provided by bots will not be parsed properly (intentionally).">[?]</span>
+                     Spoiler Log: <span class="south tooltop-character"
+                                        title="This will allow you to post a spoiler log after loading to populate items into the map<br>This feature is generally NOT allowed for tournaments! You must use spoiler logs generated from the ALTTPR Site, spoiler logs provided by bots will not be parsed properly (intentionally).">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="spoilerno" value="N" type="radio" name="spoilergroup" checked />
+                    <span class="preset-span">
+                     <input checked id="spoilerno" name="spoilergroup" type="radio" value="N"/>
                      <label for="spoilerno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="spoileryes" value="Y" type="radio" name="spoilergroup" />
+                    <span class="preset-span">
+                     <input id="spoileryes" name="spoilergroup" type="radio" value="Y"/>
                      <label for="spoileryes">Yes</label>		
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Sphere Tracking: <span class="south tooltop-character" title="This will add additional sphere tracking functionality">[?]</span>
+                     Sphere Tracking: <span class="south tooltop-character"
+                                            title="This will add additional sphere tracking functionality">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="sphereno" value="N" type="radio" name="spheregroup" checked />
+                    <span class="preset-span">
+                     <input checked id="sphereno" name="spheregroup" type="radio" value="N"/>
                      <label for="sphereno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="sphereyes" value="Y" type="radio" name="spheregroup" />
+                    <span class="preset-span">
+                     <input id="sphereyes" name="spheregroup" type="radio" value="Y"/>
                      <label for="sphereyes">Yes</label>	
                      </span>
-                  </div>
-                  <div>
+                </div>
+                <div>
                      <span class="preset-span-double">
-                     Autotracking: <span class="south tooltop-character" title="This will enable the autotracking listener, default on port 8080">[?]</span>
+                     Autotracking: <span class="south tooltop-character"
+                                         title="This will enable the autotracking listener, default on port 8080">[?]</span>
                      </span>
-                     <span class="preset-span">
-                     <input id="autotrackingno" value="N" type="radio" name="autotrackinggroup" checked />
+                    <span class="preset-span">
+                     <input checked id="autotrackingno" name="autotrackinggroup" type="radio" value="N"/>
                      <label for="autotrackingno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="autotrackingyes" value="Y" type="radio" name="autotrackinggroup" />
+                    <span class="preset-span">
+                     <input id="autotrackingyes" name="autotrackinggroup" type="radio" value="Y"/>
                      <label for="autotrackingyes">Yes</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="autotrackingclassic" value="C" type="radio" name="autotrackinggroup" />
-                     <label for="autotrackingclassic">Classic</label> <span class="south tooltop-character" title="This will enable autotracking for items and locations only, not dungeons">[?]</span>
+                    <span class="preset-span">
+                     <input id="autotrackingclassic" name="autotrackinggroup" type="radio" value="C"/>
+                     <label for="autotrackingclassic">Classic</label> <span class="south tooltop-character"
+                                                                            title="This will enable autotracking for items and locations only, not dungeons">[?]</span>
                      </span>
-                     <span class="preset-span">
+                    <span class="preset-span">
                      <label for="autotrackingport">Port:</label>
-                     <input style="width: 50px" id="autotrackingport" value="8080" type="text" />
-                     </span>							
-                  </div>
-                  <div>
-                     <span class="preset-span-double">
-                     Use Alternate Colors: <span class="south tooltop-character" title="This will load an alternate color scheme to assist with color-blind users">[?]</span>
+                     <input id="autotrackingport" style="width: 50px" type="text" value="8080"/>
                      </span>
-                     <span class="preset-span">
-                     <input id="alternatecolorgno" value="N" type="radio" name="alternatecolorgroup" checked />
+                    <span class="preset-span" style="max-width: 200px">
+                     <label for="autotrackinghost">Host:</label>
+                     <input id="autotrackinghost" placeholder="localhost" style="width: 150px" type="text"
+                            value="localhost"/>
+                     </span>
+                </div>
+                <div>
+                     <span class="preset-span-double">
+                     Use Alternate Colors: <span class="south tooltop-character"
+                                                 title="This will load an alternate color scheme to assist with color-blind users">[?]</span>
+                     </span>
+                    <span class="preset-span">
+                     <input checked id="alternatecolorgno" name="alternatecolorgroup" type="radio" value="N"/>
                      <label for="alternatecolorgno">No</label>
                      </span>
-                     <span class="preset-span">
-                     <input id="alternatecoloryes" value="Y" type="radio" name="alternatecolorgroup" />
+                    <span class="preset-span">
+                     <input id="alternatecoloryes" name="alternatecolorgroup" type="radio" value="Y"/>
                      <label for="alternatecoloryes">Yes</label>
-                     </span>						
-                  </div>
-                  <div>
-                     <span class="preset-span" style="min-width: 100%">
-                        <center><input type="checkbox" id="remembersettings"><label for="remembersettings" style="min-width: 184px;">Remember Display Settings</label> <span class="south tooltop-character" title="This site uses a tracking cookie to remember your settings">[?]</span></center>
                      </span>
-                  </div>
-               </div>
+                </div>
+                <div>
+                     <span class="preset-span" style="min-width: 100%">
+                        <center><input id="remembersettings" type="checkbox"><label for="remembersettings"
+                                                                                    style="min-width: 184px;">Remember Display Settings</label> <span
+                                class="south tooltop-character"
+                                title="This site uses a tracking cookie to remember your settings">[?]</span></center>
+                     </span>
+                </div>
             </div>
-            <div>
-               <div id="snackbar">Settings Applied! Click to launch ==></div>
-               <center><button type="button" class="launch preset-btn" style="width: 400px; font-size: 50px;" onclick="launch_tracker()">LAUNCH TRACKER</button></center>
-            </div>
-         </div>
-      </div>
-   </body>
+        </div>
+        <div>
+            <div id="snackbar">Settings Applied! Click to launch ==></div>
+            <center>
+                <button class="launch preset-btn" onclick="launch_tracker()" style="width: 400px; font-size: 50px;"
+                        type="button">LAUNCH TRACKER
+                </button>
+            </center>
+        </div>
+    </div>
+</div>
+</body>
 </html>
